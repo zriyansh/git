@@ -9,72 +9,77 @@ login <login_github>
 password <password_github>
 ```
 
+or better use SSH key method, it's difficult to get it set for the first time but that's worth it. 
+
 <hr>
 
-1. ```notepad fileName.fileExtension``` - to open a file (eg .js or .html file in Windows)
+1. To open a file (eg .js or .html file in Windows)
+ ```
+ notepad fileName.fileExtension
+ ``` 
 
+2. CLONE
+```
+git clone <url> <folder where to clone it>
+```
 
-
-2. Rename file In GIT
->git mv iphone.css mobile.css
-change contents from iphone.css to mobile.css
->git commit -m 'Rename folder.' 
-__________________________________________________________________________________________________________________________________
-
-
-3. CLONE
->git clone <url> <folder where to clone it>
-
->git clone --shallow
-if the repository is very big, this command avoids to download commits made earlier in that project.
+```
+git clone --shallow
+// if the repository is very big, this command avoids to download commits made earlier in that project.
+```
 ________________________________________________________________________________________________________________________________________
 
 
-4. CONFIGURATION
+3. CONFIGURATION
 to setup name and email,
+```
+git config
+// to show all things which can be done using this command
+// configure .gitconfig file to make it behave your way, search internet
 
->git config
-to show all things which can be done using this command
-{ config .gitconfig file to make it behave your way, search internet}  
+git config --global user.name "Priyansh Khodiyar"
 
->git config --global user.name "Priyansh Khodiyar"
+git config --global user.email "khodiyarprouansh@gmail.com"
 
->git config --global user.email "<email here>"
+git config --gloabl --list
+// shows our name and email.
+// now, a text file is created that contain these details
 
->git config --gloabl --list
-shows our name and email.
-a text file is created which has these then type
-
-> cat ~/.gitconfig
-here it will show the name and email
-_____________________________________________________________________
-
-
-5. BASIC COMMANDS
->ls -a 
-shows all the hidden folders
- 
->git init git-demo
-git initialized only in git-demo folder
-
-README.md - md stands for mark down. 
->clear
-to clear the console.
-_____________________________________________________________________
+cat ~/.gitconfig
+// here it will show the name and email
+```
 
 
-9. ADD AND COMMIT AT THE SAME TIME
->git commit -am 
-(a for ADD and m for MSG)
-add and commmit in one step of only the MODIFIED file not the newly created files.  
 
-{There must be an interface to work with these}
-suppose you made 2 changes to a file and you want to add only one of them
->git add -p <filename>
-this will show [ y/n ] to add/ not add the changes made for every single changes,
+4. BASIC COMMANDS
+```
+ls -a 
+// shows all the hidden folders
 
->git diff --catched
-shows which changes are staged for commit
+git init 
+// cd into the project folder and type this
+
+git init git-demo
+// git initialized only in git-demo folder
+
+clear
+// to clear the console/terminal.
+```
+
+
+5. ADD AND COMMIT AT THE SAME TIME
+```
+git commit -am "type your commit message here"
+// a for ADD and m for MSG
+// add and commmit in one step can be done for MODIFIED files only, not for the newly created files.
+
+
+// suppose you made 2 changes to a file and you want to add only one of them
+git add -p <filename>
+// this will show [ y/n ] to add/ not add the changes made for every single changes
+
+git diff --catched
+//shows which changes are staged for commit
 
 >git checkout <filename >
 to throw out the unwanted changes which should not be added.  
