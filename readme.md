@@ -1,23 +1,18 @@
-# git
+# GIT BASH COMMANDS
+## Git is a Distributed graph theory tree model.
 
+To save your password with github permanently, make a file ```.netrc``` in ```home/<username>```, add the following and then save. 
 
-==================================================================================
-			            	'GIT BASH COMMANDS '
-			Git is a Distributed graph theory tree model.
-==================================================================================
-
-*. To save your password with github permanently
-make a file .netrc in home/<username>
-add the following and then save. 
-
+```
 machine github.com
 login <login_github>
 password <password_github>
-______________________________________________________________
+```
 
+<hr>
 
-1. notepad file.ext - to open that file(eg .js or .html file)
-__________________________________________________________________________________________________________________________________________
+1. ```notepad fileName.fileExtension``` - to open a file (eg .js or .html file in Windows)
+
 
 
 2. Rename file In GIT
