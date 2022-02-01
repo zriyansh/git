@@ -335,6 +335,9 @@ git checkout cat
 -> switched  to branch cat
 -> now HEAD points to cat and main points to whearever it was pointing earlier,
 -> now if we commit something then master will be behind our 'cat' branch and HEAD will be the 'cat'.
+
+git branch -d <branch name>
+->removes a branch 
 ```
 
 
