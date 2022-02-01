@@ -96,6 +96,9 @@ git diff --catched
 
 git checkout <filename >
 -> to throw out the unwanted changes which should not be added in a file.  
+
+git reset <filename>
+-> to remove the file from staging area
 ```
 
 
